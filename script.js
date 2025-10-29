@@ -24,20 +24,20 @@ nav.addEventListener("mouseenter", function () {
 
 nav.addEventListener("mouseleave", function () {
     let tl = gsap.timeline()
-    tl.to(".nav_bottom", {
-        height: "0",
-        duration:0.2
+    tl.to(".elem_span h5 span", {
+        y:25,
+        duration:0.11,
+        stagger:{
+            amount:0.1
+        }
     })
     tl.to(".nav_p2 h5 span", {
         display: "none",
         duration:0.001,
     })
-    tl.to(".elem_span h5 span", {
-        y:25,
-        // duration:0.11,
-        stagger:{
-            amount:0.2
-        }
+    tl.to(".nav_bottom", {
+        height: "0",
+        duration:0.1
     })
 })
 }
