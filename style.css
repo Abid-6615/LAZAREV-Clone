@@ -138,6 +138,7 @@ nav button svg {
     display: flex;
     justify-content: center;
     margin-top: -18.8vw;
+    position: relative;
 }
 
 #page2 video{
@@ -146,7 +147,7 @@ nav button svg {
     border-radius: 1vw;
 }
 #page2 .video{
-    position: relative;
+    /* position: relative; */
     height: 37.2vw;
 }
 
@@ -164,6 +165,18 @@ nav button svg {
     pointer-events: none;
     bottom: 25.44%;
     top: 0;
+}
+
+#page2 .inner video{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
 }
 
 #page3 {

@@ -44,7 +44,8 @@ nav.addEventListener("mouseleave", function () {
 navAnimation()
 
 
-// 🟢 GREEN CIRCLE MOVE WITHIN VIDEO AREA
+function greenAnimation(){
+    // 🟢 GREEN CIRCLE MOVE WITHIN VIDEO AREA
 let green = document.querySelector(".video .green");
 let video = document.querySelector(".video");
 
@@ -75,3 +76,32 @@ video.addEventListener("mousemove", (e) => {
     ease: "power3.out",
   });
 });
+}
+greenAnimation()
+
+let upper = document.querySelector("#page2 video")
+let inner = document.querySelector(".inner video")
+
+upper.addEventListener("click", function() {
+    inner.play()
+    gsap.to(".inner video", {
+        transform: "scaleX(1) scaleY(1)",
+        opacity:1
+    })
+    gsap.to(".video .green", {
+        opacity: 0
+    })
+    gsap.to("#page2", {
+    })
+})
+
+inner.addEventListener("click", function() {
+    inner.pause()
+    gsap.to(".inner video", {
+        transform: "scaleX(0.7) scaleY(0)",
+        opacity:0
+    })
+    gsap.to(".video .green", {
+        opacity: 1
+    }) 
+})
