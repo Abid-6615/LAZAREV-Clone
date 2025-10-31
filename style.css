@@ -3,13 +3,13 @@
     padding: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-    color: #fff;
 }
 
 #page1 {
     height: 100vh;
     width: 100%;
     background-color: #111;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +35,7 @@ nav {
     top: 0;
     z-index: 100;
     background-color: #111;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -141,17 +142,18 @@ nav button svg {
     position: relative;
 }
 
-#page2 video{
+#page2 video {
     height: auto;
     width: 66vw;
     border-radius: 1vw;
 }
-#page2 .video{
+
+#page2 .video {
     /* position: relative; */
     height: 37.2vw;
 }
 
-#page2 .video .green{
+#page2 .video .green {
     background-color: #0da34e;
     height: 9vw;
     width: 9vw;
@@ -167,7 +169,7 @@ nav button svg {
     top: 0;
 }
 
-#page2 .inner video{
+#page2 .inner video {
     background-color: red;
     position: absolute;
     top: 0;
@@ -181,6 +183,66 @@ nav button svg {
 
 #page3 {
     height: 100vh;
-    width: 100%;
+    max-width: 100VW;
     background-color: #111;
 }
+
+#page3 .first,
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first .card1, .card2, .card3 {
+    background-color: #1F1F1F;
+    color: #fff;
+    /* border: 2px solid red; */
+    height: 37vh;
+    width: 43vh;
+    margin: 0.15vw;
+    border-radius: 1vw;
+    position: relative;
+}
+
+.first .card1:hover{
+    background-color: red;
+}
+
+.second .card_tall1, .card_tall2 {
+    background-color: #1F1F1F;
+    color: #fff;
+    /* border: 2px solid red; */
+    height: 37vh;
+    width: 65vh;
+    margin: 0.15vw;
+    border-radius: 1vw;
+    position: relative;
+}
+
+#page3 .index {
+    position: absolute;
+    top: 1.7vw;
+    left: 1.7vw;
+    font-size: 0.7vw;
+    font-weight: 600;
+    color: #5E5E5E;
+}
+
+#page3 h2{
+    position: absolute;
+    left: 1.7vw;
+    bottom: 4.5vw;
+    font-size: 2.7vw;
+}
+
+#page3 p{
+    position: absolute;
+    left: 1.7vw;
+    bottom: 1.7vw;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
