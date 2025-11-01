@@ -182,9 +182,10 @@ nav button svg {
 }
 
 #page3 {
-    height: 100vh;
+    height: 80vh;
     max-width: 100VW;
     background-color: #111;
+    margin-top: -3vw;
 }
 
 #page3 .first,
@@ -262,4 +263,52 @@ nav button svg {
         width: 100%;
         object-fit: cover;
         border-radius: 1vw;
+    }
+
+    #page4{
+        height: 77vh;
+        width: 100%;
+        position: relative;
+        /* background-image: url(blob:https://www.lazarev.agency/b289db61-5c2d-4b13-b60d-ca1ce577d212); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #0F124A, #161A5E, #1F257A, #2D35A1, #3442BA, #3F4CD6, #2D35A1, #1F257A, #161A5E, #0F124A);
+         background-size: 200%;
+        animation: rgb-shifting 9s linear infinite;
+    }
+
+    @keyframes rgb-shifting {
+    to {
+        background-position: 200%;
+    }
+}
+
+    #page4 h1{
+        color: #fff;
+        font-size: 4.5vw;
+    }
+
+    #page4 p{
+        color: #fff;
+        font-size: 1.3vw;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+    }
+    
+    #page4 h3{
+        color: #fff;
+        font-size: 1.4vw;
+        font-weight: 500;
+        padding: 3vw;
+    }
+
+    #page4 button{
+        padding: 1.1vw 2.5vw;
+        font-size: 0.72vw;
+        font-weight: 700;
+        border-radius: 10vw;
+        border: none;
     }

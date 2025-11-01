@@ -1,5 +1,5 @@
 function navAnimation() {
-    let nav = document.querySelector(".nav_elem");
+    let nav = document.querySelector(".nav_elem h4");
 
 
 nav.addEventListener("mouseenter", function () {
