@@ -379,13 +379,13 @@ nav button svg {
     position: relative;
 }
 
-.card h3{
+.card h3 {
     font-size: 1.25vw;
     position: absolute;
     top: 0;
 }
 
-.card p{
+.card p {
     font-size: 0.72vw;
     font-weight: 500;
     position: absolute;
@@ -403,4 +403,86 @@ nav button svg {
     border-radius: 10vw;
     border: none;
     margin-top: 1.4vw;
+}
+
+#page6 {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 5vw;
+}
+
+.pg6_container {
+    width: 66vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2vw;
+    gap: 2vw;
+}
+
+.pg6_container .left h1 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 2.7vw;
+    margin-top: 2.2vw;
+}
+
+.pg6_container .right h4 {
+    color: #AAAAAA;
+    text-transform: uppercase;
+    font-size: 0.75vw;
+    font-weight: 500;
+    margin-top: 2.2vw;
+}
+
+.pg6_container .right h3 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 2.2vw;
+    line-height: 1.6vw;
+}
+
+
+.pg6_box {
+    width: 66vw;
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3vw;
+}
+
+.box {
+    background-color: #f7f7f7;
+    padding: 2vw;
+    border-radius: 0.5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h2 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 2.5vw;
+    gap: 3vw;
+}
+
+.box p {
+    color: #7c7c7c;
+    font-size: 0.7vw;
+    font-weight: 500;
+    line-height: 0.7vw;
+}
+
+.box span {
+    position: absolute;
+    bottom: 1.2vw;
+    right: 1.5vw;
+    color: #bcbcbc;
+    font-size: 0.8vw;
+    font-weight: 400;
 }
