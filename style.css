@@ -196,7 +196,9 @@ nav button svg {
 
 }
 
-.first .card1, .card2, .card3 {
+.first .card1,
+.card2,
+.card3 {
     background-color: #1F1F1F;
     color: #fff;
     /* border: 2px solid red; */
@@ -208,7 +210,8 @@ nav button svg {
 }
 
 
-.second .card_tall1, .card_tall2 {
+.second .card_tall1,
+.card_tall2 {
     background-color: #1F1F1F;
     color: #fff;
     /* border: 2px solid red; */
@@ -229,7 +232,7 @@ nav button svg {
     z-index: 1;
 }
 
-#page3 h2{
+#page3 h2 {
     position: absolute;
     left: 1.7vw;
     bottom: 4.5vw;
@@ -237,7 +240,7 @@ nav button svg {
     z-index: 1;
 }
 
-#page3 p{
+#page3 p {
     position: absolute;
     left: 1.7vw;
     bottom: 1.7vw;
@@ -247,68 +250,157 @@ nav button svg {
     z-index: 1;
 }
 
-    .video1, .video2, .video3 {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        /* overflow: hidden; */
-        
-        
-    }
+.video1,
+.video2,
+.video3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    /* overflow: hidden; */
 
-    .video1 video, .video2 video, .video3 video{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1vw;
-    }
 
-    #page4{
-        height: 77vh;
-        width: 100%;
-        position: relative;
-        /* background-image: url(blob:https://www.lazarev.agency/b289db61-5c2d-4b13-b60d-ca1ce577d212); */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, #0F124A, #161A5E, #1F257A, #2D35A1, #3442BA, #3F4CD6, #2D35A1, #1F257A, #161A5E, #0F124A);
-         background-size: 200%;
-        animation: rgb-shifting 9s linear infinite;
-    }
+}
 
-    @keyframes rgb-shifting {
+.video1 video,
+.video2 video,
+.video3 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+#page4 {
+    height: 77vh;
+    width: 100%;
+    position: relative;
+    /* background-image: url(blob:https://www.lazarev.agency/b289db61-5c2d-4b13-b60d-ca1ce577d212); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,
+            #0F124A,
+            #14195B,
+            #19206C,
+            #1E2780,
+            #243095,
+            #2A39A8,
+            #3043BA,
+            #364CD0,
+            #3F4CD6,
+            #364CD0,
+            #3043BA,
+            #2A39A8,
+            #243095,
+            #1E2780,
+            #19206C,
+            #14195B,
+            #0F124A);
+    background-size: 200% 100%;
+    animation: gradientShift 6s linear infinite;
+}
+
+@keyframes gradientShift {
     to {
         background-position: 200%;
     }
 }
 
-    #page4 h1{
-        color: #fff;
-        font-size: 4.5vw;
-    }
+#page4 h1 {
+    color: #fff;
+    font-size: 4.5vw;
+}
 
-    #page4 p{
-        color: #fff;
-        font-size: 1.3vw;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-    }
-    
-    #page4 h3{
-        color: #fff;
-        font-size: 1.4vw;
-        font-weight: 500;
-        padding: 3vw;
-    }
+#page4 p {
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
 
-    #page4 button{
-        padding: 1.1vw 2.5vw;
-        font-size: 0.72vw;
-        font-weight: 700;
-        border-radius: 10vw;
-        border: none;
-    }
+#page4 h3 {
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding: 3vw;
+}
+
+#page4 button {
+    padding: 1.1vw 2.5vw;
+    font-size: 0.72vw;
+    font-weight: 700;
+    border-radius: 10vw;
+    border: none;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.pg5_container {
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pg5_container h1 {
+    font-size: 3.5vw;
+}
+
+.pg5_container h2 {
+    font-size: 1.16vw;
+    font-weight: 500;
+    margin: 1.2vw 0;
+    margin-bottom: 4vw;
+}
+
+.pg5_row1,
+.pg5_row2,
+.pg5_row3 {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.card {
+    /* border: 2px solid rebeccapurple; */
+    height: 8vw;
+    width: 22vw;
+    position: relative;
+}
+
+.card h3{
+    font-size: 1.25vw;
+    position: absolute;
+    top: 0;
+}
+
+.card p{
+    font-size: 0.72vw;
+    font-weight: 500;
+    position: absolute;
+    top: 2.2vw;
+    margin-right: 2.5vw;
+    color: #8D8D8D;
+}
+
+#page5 button {
+    background-color: #4F5BFF;
+    color: #fff;
+    padding: 1.1vw 5.5vw;
+    font-size: 0.72vw;
+    font-weight: 700;
+    border-radius: 10vw;
+    border: none;
+    margin-top: 1.4vw;
+}
