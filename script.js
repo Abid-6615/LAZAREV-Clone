@@ -41,7 +41,7 @@ nav.addEventListener("mouseleave", function () {
     })
 })
 }
-navAnimation()
+
 
 
 function greenAnimation(){
@@ -77,9 +77,10 @@ video.addEventListener("mousemove", (e) => {
   });
 });
 }
-greenAnimation()
 
-let upper = document.querySelector("#page2 video")
+
+function innerVideo() {
+    let upper = document.querySelector("#page2 video")
 let inner = document.querySelector(".inner video")
 
 upper.addEventListener("click", function() {
@@ -105,3 +106,50 @@ inner.addEventListener("click", function() {
         opacity: 1
     }) 
 })
+}
+
+
+function cardVideo(){
+    let card1 = document.querySelector(".card1");
+let video1 = document.querySelector(".video1 video");
+
+card1.addEventListener("mouseenter", function(){
+    video1.play()
+})
+card1.addEventListener("mouseleave", function(){
+    video1.pause()
+    video1.currentTime = 0;
+})
+
+let card2 = document.querySelector(".card2");
+let video2 = document.querySelector(".video2 video");
+
+card2.addEventListener("mouseenter", function(){
+    video2.play()
+})
+card2.addEventListener("mouseleave", function(){
+    video2.pause()
+    video2.currentTime = 0;
+})
+
+let card3 = document.querySelector(".card3");
+let video3 = document.querySelector(".video3 video");
+
+card3.addEventListener("mouseenter", function(){
+    video3.play()
+})
+card3.addEventListener("mouseleave", function(){
+    video3.pause()
+    video3.currentTime = 0;
+})
+}
+
+
+
+navAnimation()
+
+greenAnimation()
+
+innerVideo()
+
+cardVideo()

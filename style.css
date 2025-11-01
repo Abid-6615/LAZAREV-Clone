@@ -206,9 +206,6 @@ nav button svg {
     position: relative;
 }
 
-.first .card1:hover{
-    background-color: red;
-}
 
 .second .card_tall1, .card_tall2 {
     background-color: #1F1F1F;
@@ -228,6 +225,7 @@ nav button svg {
     font-size: 0.7vw;
     font-weight: 600;
     color: #5E5E5E;
+    z-index: 1;
 }
 
 #page3 h2{
@@ -235,6 +233,7 @@ nav button svg {
     left: 1.7vw;
     bottom: 4.5vw;
     font-size: 2.7vw;
+    z-index: 1;
 }
 
 #page3 p{
@@ -244,5 +243,23 @@ nav button svg {
     font-size: 1vw;
     font-weight: 400;
     color: #9b9b9b;
+    z-index: 1;
 }
 
+    .video1, .video2, .video3 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        /* overflow: hidden; */
+        
+        
+    }
+
+    .video1 video, .video2 video, .video3 video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1vw;
+    }
