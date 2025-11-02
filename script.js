@@ -141,6 +141,62 @@ function cardVideo() {
     })
 }
 
+function page7Animation(){
+    let cards = document.querySelectorAll(".pg7_main .cards");
+
+cards.forEach(function(card) {
+    let video = card.querySelector(".video1 video");
+    let paragraph = card.querySelector("p");
+
+    card.addEventListener("mouseenter", function () {
+        if (video) {
+            let tl = gsap.timeline();
+            video.play();
+            tl.to(video, {
+                height: "61%",
+                duration: 0.4
+            });
+        }
+
+        gsap.to(card, {
+            borderTop: "2px solid #fff",
+            duration: 0
+        });
+
+        if (paragraph) {
+            gsap.to(paragraph, {
+                opacity: 0,
+                duration: 0.3
+            });
+        }
+    });
+
+    card.addEventListener("mouseleave", function () {
+        if (video) {
+            let tl = gsap.timeline();
+            video.pause();
+            video.currentTime = 0;
+            tl.to(video, {
+                height: "45%",
+                duration: 0.4
+            });
+        }
+
+        gsap.to(card, {
+            borderTop: "2px solid transparent",
+            duration: 0
+        });
+
+        if (paragraph) {
+            gsap.to(paragraph, {
+                opacity: 1,
+                duration: 0.3
+            });
+        }
+    });
+});
+}
+
 
 
 navAnimation()
@@ -150,3 +206,4 @@ greenAnimation()
 innerVideo()
 
 cardVideo()
+page7Animation()

@@ -566,7 +566,6 @@ nav button svg {
     height: 46vw;
     width: 24vw;
     padding-top: 1vw;
-    /* border-top: 2px solid #fff; */
     position: relative;
 }
 
@@ -582,8 +581,8 @@ nav button svg {
     color: #9b9b9b;
     font-size: 1vw;
     font-weight: 600;
+    margin-bottom: 3vw;
 }
-
 
 .pg7_middle .cards .video1 video,
 .pg7_right .cards .video1 video{
