@@ -543,7 +543,7 @@ nav button svg {
     color: #fff;
     font-size: 0.6vw;
     display: flex;
-    gap: 12vw;
+    gap: 11vw;
 }
 
 .left_contant h4{
@@ -558,6 +558,7 @@ nav button svg {
     padding: 1vw 3vw;
     border-radius: 10vw;
     margin-top: 3.5vw;
+    border: none;
 }
 
 .pg7_middle .cards,
