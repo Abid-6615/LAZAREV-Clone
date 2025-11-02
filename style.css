@@ -169,9 +169,15 @@ nav button svg {
     top: 0;
 }
 
+.green h5{
+    font-size: 0.6vw;
+    font-weight: 800;
+    color: #fff;
+}
+
 #page2 .inner video {
     background-color: red;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -179,6 +185,7 @@ nav button svg {
     width: 100%;
     transform: scaleX(0.7) scaleY(0);
     opacity: 0;
+    z-index: 999;
 }
 
 #page3 {
@@ -485,4 +492,118 @@ nav button svg {
     color: #bcbcbc;
     font-size: 0.8vw;
     font-weight: 400;
+}
+
+#page7{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+#page7 .pg7_container{
+    width: 66vw;
+    position: relative;
+}
+
+.pg7_container .upper{
+    border-bottom: 1px solid #5E5E5E;
+}
+
+.pg7_container .upper h1{
+    color: #fff;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    margin-top: 6vw;
+    margin-bottom: 3.3vw;
+}
+.pg7_container .upper p{
+    color: #fff;
+    width: 40vw;
+    font-size: 1.14vw;
+    font-weight: 600;
+    margin-bottom: 3.3vw;
+}
+
+.pg7_container .pg7_main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+}
+
+.pg7_container .pg7_left{
+    position: sticky;
+    top: 4vw;
+    align-self: start;
+}
+
+.pg7_left .left_contant{
+    /* background-color: #0da34e; */
+    color: #fff;
+    font-size: 0.6vw;
+    display: flex;
+    gap: 12vw;
+}
+
+.left_contant h4{
+    /* border-bottom: 0.4px solid #7c7c7c; */
+    margin-bottom: 0.4vw;
+}
+.pg7_left button{
+    background-color: #4F5BFF;
+    color: #fff;
+    font-size: 0.7vw;
+    font-weight: 700;
+    padding: 1vw 3vw;
+    border-radius: 10vw;
+    margin-top: 3.5vw;
+}
+
+.pg7_middle .cards,
+.pg7_right .cards{
+    /* border: 2px solid red; */
+    height: 46vw;
+    width: 24vw;
+    padding-top: 1vw;
+    /* border-top: 2px solid #fff; */
+    position: relative;
+}
+
+.pg7_middle .cards h1,
+.pg7_right .cards h1{
+    color: #fff;
+    font-size: 1.8vw;
+    margin-bottom: 5vw;
+}
+
+.pg7_middle .cards p,
+.pg7_right .cards p{
+    color: #9b9b9b;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+
+.pg7_middle .cards .video1 video,
+.pg7_right .cards .video1 video{
+    /* border: 2px solid red; */
+    position: absolute;
+    height: 45%;
+    bottom: 5vw;
+    border-radius: none;
+}
+
+.pg7_right .card1 h1{
+    color: #fff;
+}
+
+.pg7_right .card1 p{
+    color: #fff;
+}
+
+
+#page8{
+    height: 100vh;
+    width: 100%;
 }
