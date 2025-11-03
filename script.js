@@ -197,6 +197,54 @@ cards.forEach(function(card) {
 });
 }
 
+function page8Animation(){
+    const categoryItems = document.querySelectorAll(".category_item");
+
+categoryItems.forEach(item => {
+    const h3 = item.querySelector(".item_left h3");
+    const span = item.querySelector(".item_right");
+
+    const reversibleTl = gsap.timeline({ paused: true });
+    reversibleTl.to(item, {
+        borderTop: "2px solid #fff",
+        duration: 0.3
+    }, 0)
+    .to(h3, {
+        x: "1vw",
+        duration: 0.3
+    }, 0)
+    .to(span, {
+        x: "-1vw",
+        duration: 0.3
+    }, 0);
+
+    item.addEventListener("mouseenter", () => {
+        reversibleTl.play();
+
+        gsap.killTweensOf(item, "backgroundSize"); 
+
+        gsap.to(item, {
+            backgroundSize: "100% 0%, 100% 100%",
+            duration: 0.4
+        });
+    });
+
+    item.addEventListener("mouseleave", () => {
+        reversibleTl.reverse();
+        
+        gsap.killTweensOf(item, "backgroundSize"); 
+
+        gsap.to(item, {
+            backgroundSize: "100% 100%, 100% 100%",
+            duration: 0.4,
+            
+            onComplete: () => {
+                gsap.set(item, { backgroundSize: "100% 0%, 100% 0%", delay: 0.1 });
+            }
+        });
+    });
+});
+}
 
 
 navAnimation()
@@ -208,3 +256,5 @@ innerVideo()
 cardVideo()
 
 page7Animation()
+
+page8Animation()
