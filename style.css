@@ -39,9 +39,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 8vh;
+    height: 5.4vh;
     width: 100%;
-    padding: 1.8vh 34vh;
+    padding: 0.7vh 34vh;
 }
 
 nav h1 {
@@ -289,21 +289,10 @@ nav button svg {
     align-items: center;
     background: linear-gradient(to right,
             #0F124A,
-            #14195B,
-            #19206C,
-            #1E2780,
-            #243095,
-            #2A39A8,
-            #3043BA,
-            #364CD0,
-            #3F4CD6,
-            #364CD0,
-            #3043BA,
-            #2A39A8,
-            #243095,
-            #1E2780,
-            #19206C,
-            #14195B,
+            #0f374a,
+            #0f4a42,
+            #0f4a21,
+            #304a0f,
             #0F124A);
     background-size: 200% 100%;
     animation: gradientShift 6s linear infinite;
@@ -534,7 +523,7 @@ nav button svg {
 
 .pg7_container .pg7_left {
     position: sticky;
-    top: 4vw;
+    top: 3.1vw;
     align-self: start;
 }
 
@@ -641,7 +630,7 @@ nav button svg {
     height: 100%;
     padding-top: 13vw;
     position: sticky;
-    top: -10vw;
+    top: -11vw;
     align-self: self-start;
 }
 
