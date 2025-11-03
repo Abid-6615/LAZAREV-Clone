@@ -564,9 +564,10 @@ nav button svg {
 .pg7_middle .cards,
 .pg7_right .cards{
     /* border: 2px solid red; */
-    height: 46vw;
-    width: 24vw;
+    height: 40vw;
+    width: 22vw;
     padding-top: 1vw;
+    border-top: 1px solid #7c7c7c;
     position: relative;
 }
 
@@ -580,16 +581,17 @@ nav button svg {
 .pg7_middle .cards p,
 .pg7_right .cards p{
     color: #9b9b9b;
-    font-size: 1vw;
-    font-weight: 600;
-    margin-bottom: 3vw;
+    font-size: 0.9vw;
+    font-weight: 500;
+    position: absolute;
+    bottom: 21vw;
 }
 
 .pg7_middle .cards .video1 video,
 .pg7_right .cards .video1 video{
     /* border: 2px solid red; */
     position: absolute;
-    height: 45%;
+    height: 35%;
     bottom: 5vw;
     border-radius: none;
 }

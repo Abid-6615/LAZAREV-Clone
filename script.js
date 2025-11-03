@@ -153,7 +153,7 @@ cards.forEach(function(card) {
             let tl = gsap.timeline();
             video.play();
             tl.to(video, {
-                height: "61%",
+                height: "60%",
                 duration: 0.4
             });
         }
@@ -177,13 +177,13 @@ cards.forEach(function(card) {
             video.pause();
             video.currentTime = 0;
             tl.to(video, {
-                height: "45%",
+                height: "35%",
                 duration: 0.4
             });
         }
 
         gsap.to(card, {
-            borderTop: "2px solid transparent",
+            borderTop: "1px solid #7c7c7c",
             duration: 0
         });
 
@@ -206,4 +206,5 @@ greenAnimation()
 innerVideo()
 
 cardVideo()
+
 page7Animation()
